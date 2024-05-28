@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+div {
+    margin: 0 auto;
+}
+
+
+article {
+    flex-direction: column;
+    border: black solid 1px;
+    margin: 15px 0 15px 0;
+    padding: 15px;
+    font-size: 22px;
+    border-radius: 5%;
+}
+
+img {
+    height: 25px;
+    width: 25px;
+    margin: 0 10px;
+}
+
+button {
+    padding: 5px;
+}
+
+button + button {
+    margin: 15px;
+}
+
+span + button {
+    margin: 19px
+}
+
+.resetbutton {
+    width: 100%;
+    font-size: 22px;
+}
+
+.formulier {
+    padding: 15px 0 0 0;
+    height: 200px;
+    width: 200px;
+
+}
+
+.formulier input {
+    margin: 15px 0 15px 0 ;
+}
+
+input[type="radio"]{
+    margin: 15px 10px 15px 10px;
+}
