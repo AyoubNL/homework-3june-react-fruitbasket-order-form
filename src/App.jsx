@@ -4,12 +4,11 @@ import strawberry from "./assets/strawberry.png"
 import banana from "./assets/banana.png"
 import apple from "./assets/apple.png"
 import kiwi from "./assets/kiwi.png"
-import Fruit from "./components/Fruit.jsx";
 
 function App() {
     const [counter, setCounter] = useState({Aardbei: 0, Banaan: 0, Appel: 0, Kiwi: 0})
 
-    const handleClick = (fruit, action) => {
+   const handleClick = (fruit, action) => {
 
         setCounter((prevState) => {
                 return {
@@ -55,24 +54,13 @@ function App() {
             <div>
                 <h1>Fruitmand bezorgservice</h1>
 
-
-                <Fruit
-                src={strawberry}
-                alt='foto van Aardbei'
-                fruitName='Aardbei'
-                counter='counter.Aardbei'
-                clickOne={()=> handleClick('Aardbei', 'down')}
-                clickTwo={()=> handleClick('Aardbei', 'up')}
-
-                />
-
-                {/*<article><img src={strawberry} alt="foto van aardbei"/><span><strong>Aardbeien</strong></span>*/}
-                {/*    <button type='button' disabled={counter.Aardbei === 0}*/}
-                {/*            onClick={() => handleClick('Aardbei', 'down')}>-*/}
-                {/*    </button>*/}
-                {/*    {counter.Aardbei}*/}
-                {/*    <button type='button' onClick={() => handleClick('Aardbei', 'up')}>+</button>*/}
-                {/*</article>*/}
+                <article><img src={strawberry} alt="foto van aardbei"/><span><strong>Aardbeien</strong></span>
+                    <button type='button' disabled={counter.Aardbei === 0}
+                            onClick={() => handleClick('Aardbei', 'down')}>-
+                    </button>
+                    {counter.Aardbei}
+                    <button type='button' onClick={() => handleClick('Aardbei', 'up')}>+</button>
+                </article>
 
 
                 <article><img src={banana} alt="foto van banaan"/><span><strong>Bananen</strong></span>
